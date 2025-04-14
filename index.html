@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo">STEAM</div>
+                <div class="nav-links">
+                    <a href="#">Store</a>
+                    <a href="#">Community</a>
+                    <a href="#">About</a>
+                    <a href="#">Support</a>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search games...">
+                </div>
+                <button class="login-btn" onclick="document.getElementById('login-modal').style.display='flex'">Login</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <h1>Featured & Recommended</h1>
+
+        <!-- Action Games -->
+        <section class="category-section">
+            <h2>Action Games</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80" alt="Cyber Assault">
+                    <div class="game-info">
+                        <h3>Cyber Assault</h3>
+                        <p>A futuristic action game with intense combat mechanics.</p>
+                        <div class="game-meta">
+                            <span class="rating">★ 4.5</span>
+                            <span class="price">$59.99</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- More Action Games -->
+                <div class="game-card">
+                    <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=800&q=80" alt="Shadow Warriors">
+                    <div class="game-info">
+                        <h3>Shadow Warriors</h3>
+                        <p>Epic ninja combat in feudal Japan.</p>
+                        <div class="game-meta">
+                            <span class="rating">★ 4.3</span>
+                            <span class="price">$49.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="Metro Mayhem">
+                    <div class="game-info">
+                        <h3>Metro Mayhem</h3>
+                        <p>Urban warfare in a dystopian future.</p>
+                        <div class="game-meta">
+                            <span class="rating">★ 4.2</span>
+                            <span class="price">$39.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=800&q=80" alt="Apex Hunter">
+                    <div class="game-info">
+                        <h3>Apex Hunter</h3>
+                        <p>Battle royale action in alien worlds.</p>
+                        <div class="game-meta">
+                            <span class="rating">★ 4.4</span>
+                            <span class="price">$44.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RPG Games -->
+        <section class="category-section">
+            <h2>RPG Games</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80" alt="Mystic Realms">
+                    <div class="game-info">
+                        <h3>Mystic Realms</h3>
+                        <p>An immersive fantasy RPG with deep storylines.</p>
+                        <div class="game-meta">
+                            <span class="rating">★ 4.8</span>
+                            <span class="price">$69.99</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- More RPG Games -->
+                <div class="game-card">
+                    <img src="https://images.unsplash.com/photo-1514994667787-b48ca37155f0?auto=format&fit=crop&w=800&q=80" alt="Dragon Quest Legacy">
+                    <div class="game-info">
+                        <h3>Dragon Quest Legacy</h3>
+                        <p>Epic dragon-slaying adventures await.</p>
+                        <div class="game-meta">
+                            <span class="rating">★ 4.6</span>
+                            <span class="price">$54.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80" alt="Eternal Kingdoms">
+                    <div class="game-info">
+                        <h3>Eternal Kingdoms</h3>
+                        <p>Build your kingdom and forge alliances.</p>
+                        <div class="game-meta">
+                            <span class="rating">★ 4.7</span>
+                            <span class="price">$59.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?auto=format&fit=crop&w=800&q=80" alt="Lost Legends">
+                    <div class="game-info">
+                        <h3>Lost Legends</h3>
+                        <p>Uncover ancient mysteries and powerful artifacts.</p>
+                        <div class="game-meta">
+                            <span class="rating">★ 4.5</span>
+                            <span class="price">$49.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategy Games -->
+        <section class="category-section">
+            <h2>Strategy Games</h2>
+            <div class="games-grid">
+                <div class="game-card">
+                    <img src="https://images.unsplash.com/photo-1559682289-d9cb5aee9b13?auto=format&fit=crop&w=800&q=80" alt="Empire Builder">
+                    <div class="game-info">
+                        <h3>Empire Builder</h3>
+                        <p>Build and manage your own civilization.</p>
+                        <div class="game-meta">
+                            <span class="rating">★ 4.4</span>
+                            <span class="price">$44.99</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- More Strategy Games -->
+                <div class="game-card">
+                    <img src="https://images.unsplash.com/photo-1581821873113-4f56c9c4da05?auto=format&fit=crop&w=800&q=80" alt="Stellar Command">
+                    <div class="game-info">
+                        <h3>Stellar Command</h3>
+                        <p>Space strategy with epic fleet battles.</p>
+                        <div class="game-meta">
+                            <span class="rating">★ 4.6</span>
+                            <span class="price">$49.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://images.unsplash.com/photo-1563207153-f403bf289096?auto=format&fit=crop&w=800&q=80" alt="War Masters">
+                    <div class="game-info">
+                        <h3>War Masters</h3>
+                        <p>Real-time strategy warfare.</p>
+                        <div class="game-meta">
+                            <span class="rating">★ 4.3</span>
+                            <span class="price">$39.99</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://images.unsplash.com/photo-1498736297812-3a08021f206f?auto=format&fit=crop&w=800&q=80" alt="City Architect">
+                    <div class="game-info">
+                        <h3>City Architect</h3>
+                        <p>Design and manage your perfect city.</p>
+                        <div class="game-meta">
+                            <span class="rating">★ 4.5</span>
+                            <span class="price">$34.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="document.getElementById('login-modal').style.display='none'">&times;</span>
+            <h2>Login to Steam</h2>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <button type="submit" class="login-submit">Sign In</button>
+            </form>
+            <p class="signup-link">Don't have an account? <a href="#">Create one</a></p>
+        </div>
+    </div>
+</body>
+</html>
