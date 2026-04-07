@@ -1,0 +1,25 @@
+name: Deploy to EC2
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v0.1.6
+        with:
+          host: 16.170.221.67
+          username: ubuntu
+          key: ${{ secrets.EC2_KEY }}
+          script: |
+            cd Steam_Clone
+            git pull
+            docker stop my-app || true
+            docker rm my-app || true
+            docker build -t my-app .
+            docker run -d -p 80:80 my-app
